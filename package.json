@@ -1,0 +1,40 @@
+{
+  "name": "habitat-template",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
+    "start": "serve build -s -c 1",
+    "prestart": "npm run build",
+    "build": "cross-env NODE_ENV=production webpack -p --progress",
+    "prebuild": "mkdirp build"
+  },
+  "author": "greasly@hotmail.com",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.14.0",
+    "babel-runtime": "^6.11.6",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^3.1.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "mkdirp": "^0.5.1",
+    "replace-bundle-webpack-plugin": "^1.0.0",
+    "style-loader": "^0.20.3",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  },
+  "dependencies": {
+    "preact": "^7.2.1",
+    "preact-habitat": "^3.0.2",
+    "serve": "^2.4.4"
+  },
+  "main": "webpack.config.babel.js"
+}
